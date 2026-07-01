@@ -1,0 +1,13 @@
+{
+  "default": "allow",
+  "rules": [
+    { "match": { "tool": "*", "argsRegex": "rm\\s+-rf|mkfs|:\\(\\)\\s*\\{" }, "action": "deny", "reason": "destructive shell command" },
+    { "match": { "tool": "*", "argsRegex": "AKIA[0-9A-Z]{16}|-----BEGIN [A-Z ]*PRIVATE KEY-----" }, "action": "deny", "reason": "credential in arguments" },
+    { "match": { "tool": "*", "argsRegex": "\\.env|\\.aws|credentials|id_rsa|\\.ssh" }, "action": "ask", "reason": "sensitive path access" },
+    { "match": { "tool": "write_file" }, "action": "ask", "reason": "file write" },
+    { "match": { "tool": "edit_file" }, "action": "ask", "reason": "file edit" },
+    { "match": { "tool": "move_file" }, "action": "ask", "reason": "file move/rename" },
+    { "match": { "tool": "create_directory" }, "action": "ask", "reason": "directory create" },
+    { "match": { "tool": "*" }, "action": "allow" }
+  ]
+}

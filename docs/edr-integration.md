@@ -143,4 +143,6 @@ Logstash/Cribl/Vector pipeline stage, or a ~50-line serverless function on the v
 - Ingest payloads are treated as untrusted input; rotate the token by changing `.env` and
   `docker compose up -d`.
 
-Stuck, or want a guided pilot? → [github.com/merveealpay](https://github.com/merveealpay)
+Stuck, or want a guided pilot? → [merveealpay@gmail.com](mailto:merveealpay@gmail.com) ·
+[LinkedIn](https://www.linkedin.com/in/merve-%C3%A7olak-891212113/) ·
+[GitHub](https://github.com/merveealpay)

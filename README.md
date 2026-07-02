@@ -87,7 +87,11 @@ with no matching call lands in the **UNCORRELATED EDR** panel — possible gatew
 
 ## Getting help
 
-Questions, or want a guided pilot? → [github.com/merveealpay](https://github.com/merveealpay)
+Questions, or want a guided pilot?
+
+- **E-mail:** [merveealpay@gmail.com](mailto:merveealpay@gmail.com)
+- **LinkedIn:** [Merve Çolak](https://www.linkedin.com/in/merve-%C3%A7olak-891212113/)
+- **GitHub:** [merveealpay](https://github.com/merveealpay)
 
 ## License
 

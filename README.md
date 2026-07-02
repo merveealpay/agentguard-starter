@@ -5,13 +5,13 @@ agents — in your own environment in ~20 minutes.** This kit is everything you 
 access required:
 
 - the **dashboard** as a Docker image (`ghcr.io/merveealpay/agentguard-dashboard`)
-- the **gateway** on npm (`npx agentguard`)
+- the **gateway** on npm (`npx agentguard-gateway`)
 - the **Wazuh correlation worker** on npm (`npx agentguard-edr-bridge`)
 - database **migrations**, a **sample policy**, the **osquery demo script**, and the
   step-by-step **EDR integration guide**
 
 ```
-Your agent (Claude Desktop / Cursor)  ⇄  npx agentguard  ⇄  your MCP servers
+Your agent (Claude Desktop / Cursor)  ⇄  npx agentguard-gateway  ⇄  your MCP servers
                                              │  allow / deny / ask + audit
                                              ▼
 Your EDR (osquery / CrowdStrike / Wazuh) ─▶ dashboard (this compose) ─▶ your Supabase
@@ -44,7 +44,7 @@ Wrap any MCP server with the gateway in your client's config. Claude Desktop
     "filesystem": {
       "command": "npx",
       "args": [
-        "-y", "agentguard",
+        "-y", "agentguard-gateway",
         "--policy", "/path/to/starter/policies/filesystem-agent.json",
         "--name", "filesystem",
         "--", "npx", "-y", "@modelcontextprotocol/server-filesystem", "/tmp"
